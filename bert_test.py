@@ -56,6 +56,6 @@ def get_data():
 entities, address = get_data()
 
 d = BertCorrector()
-for sent in entities:
+for sent in address:
     corrected_sent, err = d.bert_correct(sent)
     print("original sentence:{} => {}, err:{}".format(sent, corrected_sent, err))
